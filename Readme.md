@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Ольга Ефимова](https://up.htmlacademy.ru/htmlcss/16/user/302633).
-* Наставник: `Леонид Лебедев`.(https://up.htmlacademy.ru/htmlcss/16/user/67135)
+* Наставник: [Леонид Лебедев](https://up.htmlacademy.ru/htmlcss/16/user/67135).
 
 ---
 
