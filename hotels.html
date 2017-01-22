@@ -18,7 +18,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a class="active" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -31,45 +31,46 @@
     <main class="container">
       <section class="filter">
         <form class="filter-form" action="#" method="get">
-          <div class="filter-infrastructure">
-            <p class="filter-titel">Инфраструктура:</p>
+          <fieldset class="filter-infrastructure">
+            <legend>Инфраструктура:</legend>
             <input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label>
             <input type="checkbox" name="parking" id="parking">
             <label for="parking">Парковка</label>
             <input type="checkbox" name="wi-fi" id="wi-fi" >
             <label for="wi-fi">wi-fi</label>
-          </div>
-          <div class="filter-type">
-            <p class="filter-titel">Тип жилья:</p>
+          </fieldset>
+          <fieldset class="filter-type">
+            <legend>Тип жилья:</legend>
             <input type="checkbox" name="hotel" id="hotel" checked>
             <label for="hotel">Гостиница</label>
             <input type="checkbox" name="motel" id="motel" checked>
             <label for="motel">Мотель</label>
             <input type="checkbox" name="apartament" id="apartament" checked>
             <label for="apartament">Апартаменты</label>
-          </div>
-          <div class="filter-price">
-            <p class="filter-titel">Стоимость в сутки (Р):</p>
+          </fieldset>
+          <fieldset class="filter-price">
+            <legend>Стоимость в сутки (Р):</legend>
             <div class="price-conteiner">
               <div class="price-start">
-                <input type="text" name="price-start" value="от 0">
+                <label for="price-start">от</label>
+                <input type="text" name="price-start" id="price-start" value="0">
               </div>
               <div class="price-end">
-                <input type="text" name="price-end" value="до 3000">
+                <label for="price-end">от</label>
+                <input type="text" name="price-end" id="price-end" value="до 3000">
               </div>
               </div>
-              <div class="price-slider">
-
+                <div class="price-slider">
               </div>
-          </div>
+          </fieldset>
           <div class="filter-btn">
             <button type="submit">Показать</button>
           </div>
         </form>
       </section>
       <section class="sort">
-        <span class="search-number">Найдено:3</span>
+        <h3>Найдено:3</h3>
         <span class="sort-titel">Сортировка:</span>
         <a class="active" href="#">По цене</a>
         <a href="#">По типу</a>
@@ -80,12 +81,12 @@
         </div>
       </section>
       <section class="results">
-        <div class="result">
+        <article class="result">
           <div class="result-image">
-            <img src="http://placehold.it/150x100" alt="Amara resort 	&#38; spa">
+            <img src="http://placehold.it/150x100" alt="Amara resort &#38; spa">
           </div>
           <div class="result-content">
-            <p class="result-titel">Amara resort 	&#38; spa</p>
+            <p class="result-titel">Amara resort &#38; spa</p>
             <span class="type">Гостиница</span>
             <span class="price">от 3500 Р.</span>
             <div class="btn-more">
@@ -99,11 +100,11 @@
             <div class="raiting-stars">
             </div>
             <div class="raiting-value">
-              <span>Рейтинг: 8,5</span>
+              Рейтинг: 8,5
             </div>
           </div>
-        </div>
-        <div class="result">
+        </article>
+        <article class="result">
           <div class="result-image">
             <img src="http://placehold.it/150x100" alt="Desert quail inn">
           </div>
@@ -122,11 +123,11 @@
             <div class="raiting-stars">
             </div>
             <div class="raiting-value">
-              <span>Рейтинг: 8,9</span>
+              Рейтинг: 8,9
             </div>
           </div>
-        </div>
-        <div class="result">
+        </article>
+        <article class="result">
           <div class="result-image">
             <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
           </div>
@@ -145,10 +146,10 @@
             <div class="raiting-stars">
             </div>
             <div class="raiting-value">
-              <span>Рейтинг: 9,2</span>
+              Рейтинг: 9,2
             </div>
           </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer class="main-footer">
