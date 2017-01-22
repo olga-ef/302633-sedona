@@ -30,28 +30,28 @@
     </header>
     <main class="container">
       <section class="filter">
-        <form class="filter-form" action="#" method="get">
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-infrastructure">
             <legend>Инфраструктура:</legend>
-            <input type="checkbox" name="pool" id="pool" checked>
+            <input type="checkbox" name="infrastructure" id="pool" value="pool" checked>
             <label for="pool">Бассейн</label>
-            <input type="checkbox" name="parking" id="parking">
+            <input type="checkbox" name="infrastructure" id="parking" value="parking">
             <label for="parking">Парковка</label>
-            <input type="checkbox" name="wi-fi" id="wi-fi" >
+            <input type="checkbox" name="infrastructure" id="wi-fi" value="wi-fi">
             <label for="wi-fi">wi-fi</label>
           </fieldset>
           <fieldset class="filter-type">
             <legend>Тип жилья:</legend>
-            <input type="checkbox" name="hotel" id="hotel" checked>
+            <input type="checkbox" name="property-type" id="hotel" value="hotel" checked>
             <label for="hotel">Гостиница</label>
-            <input type="checkbox" name="motel" id="motel" checked>
+            <input type="checkbox" name="property-type" id="motel" value="motel" checked>
             <label for="motel">Мотель</label>
-            <input type="checkbox" name="apartament" id="apartament" checked>
+            <input type="checkbox" name="property-type" id="apartament" value="apartament" checked>
             <label for="apartament">Апартаменты</label>
           </fieldset>
           <fieldset class="filter-price">
             <legend>Стоимость в сутки (Р):</legend>
-            <div class="price-conteiner">
+            <div class="price-container">
               <div class="price-start">
                 <label for="price-start">от</label>
                 <input type="text" name="price-start" id="price-start" value="0">
@@ -60,21 +60,20 @@
                 <label for="price-end">от</label>
                 <input type="text" name="price-end" id="price-end" value="до 3000">
               </div>
-              </div>
-                <div class="price-slider">
-              </div>
+            </div>
+            <div class="price-slider"></div>
           </fieldset>
-          <div class="filter-btn">
-            <button type="submit">Показать</button>
-          </div>
+          <button type="submit">Показать</button>
         </form>
       </section>
       <section class="sort">
-        <h3>Найдено:3</h3>
-        <span class="sort-titel">Сортировка:</span>
-        <a class="active" href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По рейтингу</a>
+        <div class="sort-left">
+         <h3>Найдено:3</h3>
+          <span class="sort-titel">Сортировка:</span>
+          <a class="active" href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По рейтингу</a>
+        </div>
         <div class="sort-arrow">
           <a class="arrow-up" href="#"></a>
           <a class="arrow-down active" href="#"></a>
@@ -86,15 +85,11 @@
             <img src="http://placehold.it/150x100" alt="Amara resort &#38; spa">
           </div>
           <div class="result-content">
-            <p class="result-titel">Amara resort &#38; spa</p>
+            <p class="result-title">Amara resort &#38; spa</p>
             <span class="type">Гостиница</span>
             <span class="price">от 3500 Р.</span>
-            <div class="btn-more">
-              <a class="btn btn-more" href="#">Подробнее</a>
-            </div>
-            <div class="btn btn-reserve">
-              <a href="#">Бронировать</a>
-            </div>
+            <a class="btn btn-more" href="#">Подробнее</a>
+            <a class="btn-reserve" href="#">Бронировать</a>
           </div>
           <div class="result-raiting">
             <div class="raiting-stars">
@@ -112,12 +107,8 @@
             <p class="result-titel">Desert quail inn</p>
             <span class="type">Мотель</span>
             <span class="price">от 2000 Р.</span>
-            <div class="btn btn-more">
-              <a  href="#">Подробнее</a>
-            </div>
-            <div class="btn btn-reserve">
-              <a href="#">Бронировать</a>
-            </div>
+            <a class="btn-more" href="#">Подробнее</a>
+            <a class="btn-reserve" href="#">Бронировать</a>
           </div>
           <div class="result-raiting">
             <div class="raiting-stars">
@@ -135,12 +126,8 @@
             <p class="result-titel">Villas at poco diablo</p>
             <span class="type">Апартаменты</span>
             <span class="price">от 4000 Р.</span>
-            <div class="btn-more">
-              <a class="btn btn-more" href="#">Подробнее</a>
-            </div>
-            <div class="btn btn-reserve">
-              <a href="#">Бронировать</a>
-            </div>
+            <a class="btn-more" href="#">Подробнее</a>
+            <a class="btn-reserve" href="#">Бронировать</a>
           </div>
           <div class="result-raiting">
             <div class="raiting-stars">
