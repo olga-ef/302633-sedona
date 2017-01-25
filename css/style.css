@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Pt Sans;
+  src: url("..fonts/ptsans.woff2");
+
+}
+body {
+  font-family: "Pt Sans", "sans-serif";
+  font-size:14px;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 21px;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+  }

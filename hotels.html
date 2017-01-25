@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - поиск гостиницы</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -18,13 +19,13 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a class="active" href="#">Гостиницы</a>
+            <a class="active">Гостиницы</a>
           </li>
         </ul>
       </nav>
       <div class="logo">
         <a href="#">
-          <img src="http://placehold.it/150x100" alt="city of Sedona">
+          <img src="img/logo.png" alt="city of Sedona" width="138" height="70">
         </a>
       </div>
     </header>
@@ -57,13 +58,13 @@
                 <input type="text" name="price-start" id="price-start" value="0">
               </div>
               <div class="price-end">
-                <label for="price-end">от</label>
-                <input type="text" name="price-end" id="price-end" value="до 3000">
+                <label for="price-end">до</label>
+                <input type="text" name="price-end" id="price-end" value="3000">
               </div>
             </div>
             <div class="price-slider"></div>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="btn-show" type="submit">Показать</button>
         </form>
       </section>
       <section class="sort">
@@ -82,14 +83,14 @@
       <section class="results">
         <article class="result">
           <div class="result-image">
-            <img src="http://placehold.it/150x100" alt="Amara resort &#38; spa">
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort &#38; spa">
           </div>
           <div class="result-content">
-            <p class="result-title">Amara resort &#38; spa</p>
+            <h2 class="result-title">Amara resort &#38; spa</h2>
             <span class="type">Гостиница</span>
             <span class="price">от 3500 Р.</span>
-            <a class="btn btn-more" href="#">Подробнее</a>
-            <a class="btn-reserve" href="#">Бронировать</a>
+            <a class="btn-hotels btn-more" href="#">Подробнее</a>
+            <a class=" btn-btn-hotels btn-reserve" href="#">Бронировать</a>
           </div>
           <div class="result-raiting">
             <div class="raiting-stars">
@@ -101,10 +102,10 @@
         </article>
         <article class="result">
           <div class="result-image">
-            <img src="http://placehold.it/150x100" alt="Desert quail inn">
+            <img src="img/desert-quail.jpg" width="135" height="90" alt="Desert quail inn">
           </div>
           <div class="result-content">
-            <p class="result-titel">Desert quail inn</p>
+            <h2 class="result-titel">Desert quail inn</h2>
             <span class="type">Мотель</span>
             <span class="price">от 2000 Р.</span>
             <a class="btn-more" href="#">Подробнее</a>
@@ -120,10 +121,10 @@
         </article>
         <article class="result">
           <div class="result-image">
-            <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
+            <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at poco diablo">
           </div>
           <div class="result-content">
-            <p class="result-titel">Villas at poco diablo</p>
+            <h2 class="result-titel">Villas at poco diablo</h2>
             <span class="type">Апартаменты</span>
             <span class="price">от 4000 Р.</span>
             <a class="btn-more" href="#">Подробнее</a>
@@ -151,7 +152,7 @@
       <div class="footer-copyright">
         <span>Website by</span>
         <a href="https://htmlacademy.ru" >
-          <img src="http://placehold.it/150x100" alt="HTML Academy">
+          <img src="img/htmlacademy.png" width="113" height="39" alt="HTML Academy">
         </a>
       </div>
     </footer>
