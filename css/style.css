@@ -4,6 +4,8 @@
 
 }
 body {
+  min-width: 768px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   font-family: "Pt Sans", "Arial", "sans-serif";
@@ -14,32 +16,30 @@ body {
 }
 .main-header {
   background-color: #159bef;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 72px;
-  box-sizing: border-box;
 }
 .main-menu {
 }
 li {
-  width: 240px;
+  width: 20%;
   display: inline-block;
 }
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: #eae485;
 }
 .caption {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 h1 {
-  width: 576px;
+  width: 48%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 27,5px;
+  margin-bottom: 27.5px;
   line-height: 26px;
   font-size: 21px;
   font-weight: bold;
@@ -47,7 +47,7 @@ h1 {
   background-color: #c9f10f;
 }
 .about-text {
-  width: 575px;
+  width: 48%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 55px;
@@ -55,7 +55,6 @@ h1 {
   background-color: #1ceb2a;
 }
 .features{
-
   margin-bottom: 58px;
   background-color: #ed22b6;
 }
@@ -65,72 +64,71 @@ h1 {
   clear: both;
 }
 .features-item {
-  width: 400px;
+  width: 33%;
   min-height: 256px;
   margin:0;
   float:left;
   background-color: #d7f50d;
 }
 .features-image {
-  width: 800px;
+  width: 66%;
   margin: 0;
   float: left;
 }
 .search {
-  width: 568px;
-  background-color: #24dc16;
+  width: 48%;
   margin: 0 auto;
+  background-color: #24dc16;
 }
 .main-footer {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: #17e2ab;
 }
 .footer-hashtag {
-  width: 240px;
+  width: 20%;
   background-color: #fcff0e;
   float: left;
-  margin-left: 73px;
+  margin-left: 6%;
 }
 .footer-social {
-  width: 400px;
+  width: 33%;
   background-color: #fcff0e;
   margin-left: 88px;
   float: left;
 }
 .footer-copyright {
-  width: 240px;
+  width: 20%;
   background-color: #fcff0e;
   margin-right: 73px;
   float: right;
 }
 .filter {
-  padding: 0 72px;
-  background-color: #fcff0e;
+ padding: 0 6%;
+ background-color: #fcff0e;
 }
-.filter-form {
-}
+
 .filter-infrastructure {
-  width: 240px;
+  width: 20%;
   float: left;
   margin-right: 0;
   margin-left:0;
   background-color: #1734e2;
 }
 .filter-type {
-  width: 288px;
+  width: 24%;
   float: left;
   margin-right: 0;
   margin-left:0;
   background-color: #1734e2;
 }
 .filter-price {
-  width: 328px;
+  width: 28%;
   float:right;
   background-color: #1734e2;
 }
 .sort {
-  padding: 0 72px;
+  padding: 0 6%;
   background-color: #e25517;
 }
 .sort-left {
@@ -139,31 +137,30 @@ h1 {
   background-color: #1ef508;
 }
 .sort-arrow {
-  width:50px;
+  width:4%;
   height: 50px;
   float: right;
   background-color: #1ef508;
 }
 .results {
-  padding: 0 72px;
+  padding: 0 6%;
   background-color: #19d4f0;
 }
 .result-image {
-  width: 135px;
+  width: 15%;
   float: left;
   background-color: #e217b0;
 }
 .result-content {
-  width: 370px;
+  width: 30%;
   float: left;
   background-color: #e217b0;
 }
 .result-raiting {
-  width: 240px;
+  width: 20%;
   float: right;
   background-color: #e217b0;
 }
-
 h2 {
   font-size: 21px;
   font-weight: bold;
