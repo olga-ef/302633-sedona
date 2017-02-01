@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-menu">
-          <ul class="menu-list">
-            <li class="menu-item">
+          <ul class="menu-list clearfix">
+            <li class="menu-item menu-item-left">
               <a href="#">Информация</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item-left">
               <a href="#">Фото и видео</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item-right">
               <a href="#">Карта штата</a>
             </li>
-            <li class="menu-item">
-              <a href="#">Гостиницы</a>
+            <li class="menu-item menu-item-right">
+              <a href="hotels.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -32,6 +33,7 @@
       </header>
       <main class="container">
         <section class="caption">
+          <img class="caption-text" src="img/text.png" width="458" height="352" alt="welcome to the gorgeous Sedona">
         </section>
         <section class="about">
           <h1 class="title-main">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -44,9 +46,9 @@
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="features-image">
-            <img class="image-item" src="img/hotel.jpg" width="800" height="256" alt="Гостиница">
+            <img class="image-item" src="img/hotel.jpg" width="800" height="401" alt="Гостиница">
           </div>
-          <div class="features-item white">
+          <div class="features-item features-white">
             <div class="features-icon"></div>
             <h2 class="features-title">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -62,7 +64,7 @@
             <p>Не только китайского, но и местного производства!</p>
           </div>
           <div class="features-image">
-            <img class="image-item" src="img/bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+            <img class="image-item" src="img/bridge.jpg" width="800" height="400" alt="Мост Дьявола">
           </div>
           <div class="features-item features-blue">
             <h2 class="features-title">Там есть мост дьявола</h2>
@@ -92,24 +94,24 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="date-check-in">
               <label for="check-in">Дата заезда:</label>
-              <input type="text" name="check-in" id="check-in" value="24 апреля 2016">
+              <input  type="text" name="check-in" id="check-in" value="24 апреля 2016">
             </div>
-            <div class="check-out">
+            <div class="date-check-out">
               <label for="check-out">Дата выезда:</label>
               <input type="text" name="check-out" id="check-out" value="4 июля 2016">
             </div>
             <div class="persons">
-              <label for="adults">Взрослые:</label>
-              <button type="button">+</button>
-              <input type="text" name="abults" id="adults" value="2">
-              <button type="button">-</button>
-              <label for="children">Дети:</label>
-              <button type="button">+</button>
-              <input type="text" name="children" id="children" value="0">
-              <button type="button">-</button>
+              <label class="adults" for="adults">Взрослые:</label>
+              <button class="plus" type="button">+</button>
+              <input  type="text" name="adults" id="adults" value="2">
+              <button class="minus" type="button">-</button>
+              <label class="children" for="children">Дети:</label>
+              <button class="plus" type="button">+</button>
+              <input  type="text" name="children" id="children" value="0">
+              <button class="minus" type="button">-</button>
             </div>
-            <div class="btn">
-              <button class="" type="submit">Найти</button>
+            <div class="btn-search">
+              <button  type="submit">Найти</button>
             </div>
           </form>
         </section>

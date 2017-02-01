@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - поиск гостиницы</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -35,16 +36,16 @@
           <form class="filter-form clearfix" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-infrastructure">
               <legend>Инфраструктура:</legend>
-              <ul>
-                <li>
+              <ul class="filter-list">
+                <li class="list-item">
                   <input type="checkbox" name="infrastructure" id="pool" value="pool" checked>
                   <label for="pool">Бассейн</label>
                 </li>
-                <li>
+                <li class="list-item">
                   <input type="checkbox" name="infrastructure" id="parking" value="parking">
                   <label for="parking">Парковка</label>
                 </li>
-                <li>
+                <li class="list-item">
                   <input type="checkbox" name="infrastructure" id="wi-fi" value="wi-fi">
                   <label for="wi-fi">wi-fi</label>
                 </li>
@@ -52,16 +53,16 @@
             </fieldset>
             <fieldset class="filter-type">
               <legend>Тип жилья:</legend>
-              <ul>
-                <li>
+              <ul class="filter-list">
+                <li class="list-item">
                   <input type="checkbox" name="property-type" id="hotel" value="hotel" checked>
                   <label for="hotel">Гостиница</label>
                 </li>
-                <li>
+                <li class="list-item">
                   <input type="checkbox" name="property-type" id="motel" value="motel" checked>
                   <label for="motel">Мотель</label>
                 </li>
-                <li>
+                <li class="list-item">
                   <input type="checkbox" name="property-type" id="apartament" value="apartament" checked>
                   <label for="apartament">Апартаменты</label>
                 </li>
@@ -86,8 +87,8 @@
         </section>
         <section class="sort clearfix">
           <div class="sort-left">
-           <b>Найдено:3</b>
-            <span class="sort-titel">Сортировка:</span>
+           <b class="sort-title">Найдено:3</b>
+            <span class="sort-text">Сортировка:</span>
             <ul class="sort-list">
               <li class="sort-item">
                 <a class="active">По цене</a>
@@ -108,7 +109,7 @@
         <section class="results clearfix">
           <article class="result-item clearfix">
             <div class="result-image">
-              <img src="img/hotels/amara.jpg" width="135" height="90" alt="Amara resort &#38; spa">
+              <img class="hotel-image" src="img/hotels/amara.jpg" width="135" height="90" alt="Amara resort &#38; spa">
             </div>
             <div class="result-content">
               <h2 class="result-title">Amara resort &#38; spa</h2>
@@ -127,10 +128,10 @@
           </article>
           <article class="result-item clearfix">
             <div class="result-image">
-              <img src="img/hotels/desert.jpg" width="135" height="90" alt="Desert quail inn">
+              <img class="hotel-image" src="img/hotels/desert.jpg" width="135" height="90" alt="Desert quail inn">
             </div>
             <div class="result-content">
-              <h2 class="result-titel">Desert quail inn</h2>
+              <h2 class="result-title">Desert quail inn</h2>
               <span class="type">Мотель</span>
               <span class="price">от 2000 Р.</span>
               <a class=" btn-hotels btn-more" href="#">Подробнее</a>
@@ -146,10 +147,10 @@
           </article>
           <article class="result-item clearfix">
             <div class="result-image">
-              <img src="img/hotels/pocodiablo.jpg" width="135" height="90" alt="Villas at poco diablo">
+              <img class="hotel-image" src="img/hotels/pocodiablo.jpg" width="135" height="90" alt="Villas at poco diablo">
             </div>
             <div class="result-content">
-              <h2 class="result-titel">Villas at poco diablo</h2>
+              <h2 class="result-title">Villas at poco diablo</h2>
               <span class="type">Апартаменты</span>
               <span class="price">от 4000 Р.</span>
               <a class="btn-hotels btn-more" href="#">Подробнее</a>
