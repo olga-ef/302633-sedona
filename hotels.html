@@ -71,19 +71,25 @@
             <fieldset class="filter-price">
               <legend>Стоимость в сутки (Р):</legend>
                 <div class="price-container">
-                  <label for="price-start">от</label>
-                  <input type="text" name="price-start" id="price-start" value="0">
-                  <label for="price-end">до</label>
-                  <input type="text" name="price-end" id="price-end" value="3000">
+                  <label class="min-price" for="price-start">от<input type="text" name="price-start" id="price-start" value="0">
+                  </label>
+                  <label class="max-price" for="price-end">до<input type="text" name="price-end" id="price-end" value="3000">
+                </label>
                 </div>
-              <div class="price-slider"></div>
+              <div class="price-slider">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
               <button class="btn" type="submit">Показать</button>
             </fieldset>
           </form>
         </section>
         <section class="sort clearfix">
           <div class="sort-left">
-           <b class="sort-title">Найдено:3</b>
+           <b class="sort-title">Найдено: 3</b>
             <span class="sort-text">Сортировка:</span>
             <ul>
               <li class="sort-item">
@@ -99,7 +105,7 @@
           </div>
           <div class="sort-arrow">
             <a class="arrow-up" href="#"></a>
-            <a class="arrow-down active" href="#"></a>
+            <a class="arrow-down active"></a>
           </div>
         </section>
         <section class="results clearfix">
@@ -113,8 +119,10 @@
               </a>
               <span class="type">Гостиница</span>
               <span class="price">от 4000 Р.</span>
-              <a class="btn btn-more" href="#">Подробнее</a>
-              <a class=" btn btn-reserve" href="#">Забронировать</a>
+              <div class="btn-container">
+                <a class="btn btn-more" href="#">Подробнее</a>
+                <a class=" btn btn-reserve" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="result-raiting">
               <div class="raiting-stars stars-5">
@@ -134,8 +142,10 @@
               </a>
               <span class="type">Мотель</span>
               <span class="price">от 3000 Р.</span>
-              <a class=" btn btn-more" href="#">Подробнее</a>
-              <a class="btn btn-reserve" href="#">Забронировать</a>
+              <div class="btn-container">
+                <a class=" btn btn-more" href="#">Подробнее</a>
+                <a class="btn btn-reserve" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="result-raiting">
               <div class="raiting-stars stars-3">
@@ -155,8 +165,10 @@
               </a>
               <span class="type">Апартаменты</span>
               <span class="price">от 2000 Р.</span>
-              <a class="btn btn-more" href="#">Подробнее</a>
-              <a class="btn btn-reserve" href="#">Забронировать</a>
+              <div class="btn-container">
+                <a class="btn btn-more" href="#">Подробнее</a>
+                <a class="btn btn-reserve" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="result-raiting">
               <div class="raiting-stars stars-2">
@@ -168,7 +180,7 @@
           </article>
         </section>
       </main>
-      <footer class="main-footer clearfix">
+      <footer class="hotels-footer  clearfix">
         <div class="footer-hashtag">
           <p>#Visitsedona</p>
         </div>
