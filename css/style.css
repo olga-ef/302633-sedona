@@ -80,7 +80,8 @@ color: #81b3d2;
 .logo {
   position: absolute;
   top: 0;
-  left: 41%;
+  left: 50%;
+  margin-left: -69px;
 }
 .container {
   width: 100%;
@@ -88,6 +89,7 @@ color: #81b3d2;
 }
 .caption {
   height: 510px;
+  background-color: #ffffff;
   background-image:
    url("../img/mask.png"),
    url("../img/mountain.jpg");
@@ -96,11 +98,11 @@ color: #81b3d2;
    no-repeat;
   background-position:
     50% 100%,
-    50% 40%;
+    50% 20%;
   padding-top: 77px;
   background-size:
-    100% 37px,
-    100% 100%;
+    100% auto,
+    cover;
 
 }
 .caption-text {
@@ -109,8 +111,8 @@ color: #81b3d2;
   margin-right: auto;
 }
 .about {
-  padding-top: 60px;
-  padding-bottom: 37px;
+  padding-top: 57px;
+  padding-bottom: 38px;
   background-color: #ffffff;
 }
 .title-main {
@@ -118,7 +120,7 @@ color: #81b3d2;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   line-height: 26px;
   font-size: 21px;
   font-weight: bold;
@@ -143,15 +145,15 @@ color: #81b3d2;
 }
 .features-item {
   width: 33.33%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 4%;
+  padding-right: 4%;
   text-align: center;
   float:left;
 }
 .features-title {
   width: 160px;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   margin-right: auto;
   margin-left: auto;
   font-size: 21px;
@@ -166,8 +168,8 @@ color: #81b3d2;
 }
 .features-blue {
   min-height: 256px;
-  padding-top: 48px;
-  padding-bottom: 15px;
+  padding-top: 55px;
+  padding-bottom: 8px;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -175,11 +177,11 @@ color: #81b3d2;
   color: #ffffff;
 }
 .features-white {
-  min-height: 328px;
-  padding-left: 5.2%;
-  padding-right: 5.2%;
+  min-height: 330px;
+  padding-left: 4.9%;
+  padding-right: 4.9%;
   padding-top: 60px;
-  padding-bottom: 42px;
+  padding-bottom: 10px;
   background-color: #ffffff;
 }
 .features-icon {
@@ -208,15 +210,15 @@ color: #81b3d2;
   background-position: -10px -304px;
 }
 .icon-souvenires::before {
-  width: 64px;
-  height: 76px;
-  background-position: -10px -763px;
+  width: 72px;
+  height: 75px;
+  background-position: -3px -764px;
 }
 .features-grey {
   min-height: 256px;
   padding-top: 47px;
-  padding-left: 6%;
-  padding-right: 7%;
+  padding-left: 5.2%;
+  padding-right: 5.2%;
   background-color: #eeeeee;
 }
 .features-image {
@@ -233,7 +235,7 @@ color: #81b3d2;
   width: 100%;
   height: auto;
   display: block;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -245,7 +247,7 @@ color: #81b3d2;
 }
 .search-title {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   text-align:center;
@@ -256,7 +258,7 @@ color: #81b3d2;
 .search-text {
   width: 480px;
   margin-top: 0;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -290,7 +292,7 @@ color: #81b3d2;
 .hotel-search:hover {
   background-color: #604e43;
 }
-.hoteal-search:active {
+.hotel-search:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -341,6 +343,7 @@ color: #81b3d2;
 .date-check-out input {
   width: 344px;
   height: 38px;
+  padding-right: 40px;
 }
 .calendar {
   position: absolute;
@@ -364,6 +367,7 @@ color: #81b3d2;
   position: relative;
 }
 .persons {
+  position: relative;
   margin-bottom: 55px;
   font-size: 0;
 }
@@ -372,16 +376,24 @@ color: #81b3d2;
   vertical-align: middle;;
 }
 .persons input {
-  width: 38px;
+  width: 114px;
   height: 38px;
-  padding-left: 15px;
+  padding-left: 38px;
+  padding-right: 38px;
   font-size: 14px;
+  text-align: center;
 }
 .persons .btn {
   width: 38px;
   height: 38px;
-  background-color: #f2f2f2;
-  position: relative;
+  background-color: transparent;
+  position: absolute;
+}
+.persons .btn-plus:nth-of-type(2) {
+  left: 187px;
+}
+.persons .btn-plus:last-of-type {
+  right: 0;
 }
 .btn-plus::before {
   content: "";
@@ -527,7 +539,7 @@ color: #81b3d2;
   text-align: center;
   padding-top: 5px;
 }
-.footer-copiright span {
+.footer-copyright span {
   vertical-align: middle;
   display: inline-block;
 }
@@ -556,6 +568,7 @@ color: #81b3d2;
  background-image: url("../img/background.jpg");
  background-repeat: no-repeat;
  background-position: 30% 20%;
+ background-size: 100% auto;
  color: #ffffff;
 }
 .filter ul {
@@ -564,9 +577,10 @@ color: #81b3d2;
   list-style: none;
 }
 .filter-infrastructure {
-  width: 238px;
+  width: 155px;
   float: left;
   margin-left: 0;
+  margin-right: 100px;
   border: none;
   padding: 0;
 }
@@ -627,15 +641,16 @@ color: #81b3d2;
   border: none;
 }
 .filter-price {
-  width: 33%;
-  margin: 0;
+  width: 31%;
   padding: 0;
+  padding-left: 10px;
+  margin: 0;
   float:right;
   border: none;
 }
 .filter-price legend {
   margin: 0;
-  margin-left: 3px;
+  margin-left: -10px;
   margin-bottom: 9px;
 }
 .price-container {
@@ -656,7 +671,6 @@ color: #81b3d2;
   height: 22px;
   background: #ffffff;
 }
-
   .price-container label {
     display: inline-block;
     font-size: 14px;
@@ -669,10 +683,10 @@ color: #81b3d2;
     width: 50%;
   }
   .price-container .min-price {
-    padding-left: 18%;
+    padding-left: 20%;
   }
   .price-container .max-price {
-    padding-left: 13%
+    padding-left: 17%
   }
   .price-container input {
     width: 60%;
@@ -686,7 +700,7 @@ color: #81b3d2;
 .price-slider {
   position: relative;
   margin-bottom: 32px;
-  margin-left: 3px;
+  margin-left: 0;
 }
 .price-slider .scale {
   width: 100%;
@@ -694,16 +708,16 @@ color: #81b3d2;
   background-color: rgba(255, 255, 255, 0.3)
 }
 .price-slider .bar {
-  width: 81%;
+  width: 80%;
   height: 2px;
   background-color: #ffffff;
 }
 .range-toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
-  border: 10px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  border: 8px solid #ffffff;
   background: #ababab;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1,  0.2);
@@ -716,12 +730,10 @@ color: #81b3d2;
   left: 0;
 }
 .range-toggle-max {
-  left: 71%;
+  left: 80%;
 }
-
 .filter-price .btn {
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 27%;
   width: 137px;
   height: 36px;
   display: block;
