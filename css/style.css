@@ -169,7 +169,6 @@ color: #81b3d2;
 .features-blue {
   min-height: 256px;
   padding-top: 55px;
-  padding-bottom: 8px;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -235,7 +234,7 @@ color: #81b3d2;
   width: 100%;
   height: auto;
   display: block;
-  top: 48%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -312,7 +311,9 @@ color: #81b3d2;
 .search-form input {
   display: inline-block;
   padding-left: 10px;
-  font: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
   line-height: 26px;
   vertical-align: middle;
   text-align: left;
@@ -331,17 +332,29 @@ color: #81b3d2;
 }
 .date-check-in {
   margin-bottom: 29px;
+  font-size: 0;
+}
+.date-container {
+  width: 343px;
+  display: inline-block;
   position: relative;
+  background-color: red;
 }
-.date-check-in input  {
-  margin-left: 22px;
+.search-form label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 21px;
 }
-.date-check-out input {
-  margin-left: 18px;
+.date-check-in label {
+  margin-right: 24px;
+}
+.date-check-out label {
+  margin-right: 17px;
 }
 .date-check-in input,
 .date-check-out input {
-  width: 344px;
+  width: 100%;
   height: 38px;
   padding-right: 40px;
 }
@@ -364,16 +377,22 @@ color: #81b3d2;
 }
 .date-check-out {
   margin-bottom: 30px;
-  position: relative;
 }
 .persons {
   position: relative;
   margin-bottom: 55px;
   font-size: 0;
 }
+.persons-container {
+  width: 114px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
 .persons label {
+  display: inline-block;
   font-size: 14px;
-  vertical-align: middle;;
+  vertical-align: middle;
 }
 .persons input {
   width: 114px;
@@ -389,11 +408,11 @@ color: #81b3d2;
   background-color: transparent;
   position: absolute;
 }
-.persons .btn-plus:nth-of-type(2) {
-  left: 187px;
+.persons-container .btn-plus {
+  left: 75px;
 }
-.persons .btn-plus:last-of-type {
-  right: 0;
+.persons .btn-minus {
+  left: 0;
 }
 .btn-plus::before {
   content: "";
@@ -471,7 +490,7 @@ color: #81b3d2;
 .hotels-footer {
   padding-top: 36px;
   padding-bottom: 36px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   color: #000000;
 }
 .footer-hashtag {
@@ -567,8 +586,9 @@ color: #81b3d2;
  padding-bottom: 5px;
  background-image: url("../img/background.jpg");
  background-repeat: no-repeat;
- background-position: 30% 20%;
+ background-position: 30% 16%;
  background-size: 100% auto;
+ background-color: #ffffff;
  color: #ffffff;
 }
 .filter ul {
@@ -577,10 +597,10 @@ color: #81b3d2;
   list-style: none;
 }
 .filter-infrastructure {
-  width: 155px;
+  width: 205px;
   float: left;
   margin-left: 0;
-  margin-right: 100px;
+  margin-right: 4.7%;
   border: none;
   padding: 0;
 }
@@ -612,7 +632,9 @@ color: #81b3d2;
   height: 22px;
   background-position: -10px -10px;
 }
-
+.filter-form input[type="checkbox"]:disabled + label::before {
+  background-position: -10px -52px;
+}
 .filter-form input[type="checkbox"]:checked + label::before {
   content: "";
   position: absolute;
@@ -625,6 +647,9 @@ color: #81b3d2;
   height: 22px;
   background-position: -10px -136px;
 }
+.filter-form input[type="checkbox"]:checked:disabled + label::before {
+  background-position: -10px -94px;
+}
 .filter-form li {
   margin-bottom: 25px;
   margin-left: 0;
@@ -633,7 +658,7 @@ color: #81b3d2;
   line-height: 21px;
 }
 .filter-type {
-  width: 180px;
+  width: 205px;
   float: left;
   margin-right: 0;
   margin-left:0;
@@ -643,14 +668,12 @@ color: #81b3d2;
 .filter-price {
   width: 31%;
   padding: 0;
-  padding-left: 10px;
   margin: 0;
   float:right;
   border: none;
 }
 .filter-price legend {
   margin: 0;
-  margin-left: -10px;
   margin-bottom: 9px;
 }
 .price-container {
@@ -671,25 +694,27 @@ color: #81b3d2;
   height: 22px;
   background: #ffffff;
 }
-  .price-container label {
+.price-container label {
     display: inline-block;
+    height: 32px;
     font-size: 14px;
     line-height: 32px;
     vertical-align: middle;
     cursor: pointer;
   }
-  .price-container .min-price,
-  .price-container .max-price {
+.price-container .min-price,
+.price-container .max-price {
     width: 50%;
   }
-  .price-container .min-price {
+.price-container .min-price {
     padding-left: 20%;
   }
-  .price-container .max-price {
+.price-container .max-price {
     padding-left: 17%
   }
-  .price-container input {
+.price-container input {
     width: 60%;
+    height: 32px;
     margin: 0;
     margin-left: 5px;
     color: inherit;
@@ -733,7 +758,8 @@ color: #81b3d2;
   left: 80%;
 }
 .filter-price .btn {
-  margin-left: 27%;
+  margin-left: auto;
+  margin-right: auto;
   width: 137px;
   height: 36px;
   display: block;
@@ -923,28 +949,19 @@ color: #81b3d2;
   width: 111px;
   float: right;
   text-align: right;
+  font-size: 0;
 }
-.raiting-stars {
+.raiting-star {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  display: block;
+  display: inline-block;
   margin-bottom: 48px;
   float: right;
 }
-.stars-5 {
-  width: 89px;
+.raiting-star {
+  width: 24px;
   height: 17px;
-  background-position: -10px -472px;
-}
-.stars-3{
-  width: 65px;
-  height: 17px;
-  background-position: -10px -859px;
-}
-.stars-2 {
-  width: 42px;
-  height: 17px;
-  background-position: -10px -966px;
+  background-position: -3px -965px;
 }
 .raiting-value {
   padding-left: 13px;

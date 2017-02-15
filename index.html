@@ -26,7 +26,7 @@
           </ul>
         </nav>
         <div class="logo">
-          <a href="index.html">
+          <a>
             <img src="img/logo.png" width="138" height="70" alt="city of Sedona" >
           </a>
         </div>
@@ -54,7 +54,7 @@
             <div class="features-item features-white">
               <div class="features-icon icon-house"></div>
               <h2 class="features-title">Жилье</h2>
-              <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+              <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все&nbsp;как в&nbsp;кино!</p>
             </div>
             <div class="features-item features-white">
               <div class="features-icon icon-eat"></div>
@@ -86,7 +86,7 @@
             <div class="features-item features-grey">
               <h2 class="features-title">Красивая дорога</h2>
               <p class="features-number ">&ndash;&nbsp;&#8470;4 &ndash;</p>
-              <p>Ехать в&nbsp;Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+              <p>Ехать в&nbsp;Седону из Лас-&nbsp;Вегаса&nbsp;совсем не&nbsp;скучно!</p>
             </div>
             <div class="features-item features-grey">
               <h2 class="features-title">Мало туристов</h2>
@@ -101,24 +101,32 @@
           <a class="btn hotel-search" href="hotels.html">Поиск гостиницы в Седоне</a>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="date-check-in">
-              <span class="calendar"></span>
               <label for="check-in">Дата заезда:</label>
-              <input  type="text" name="check-in" id="check-in" value="24 апреля 2016">
+              <div class="date-container">
+                <span class="calendar"></span>
+                <input  type="text" name="check-in" id="check-in" value="24 апреля 2017">
+              </div>
             </div>
             <div class="date-check-out">
-              <span class="calendar"></span>
               <label for="check-out">Дата выезда:</label>
-              <input type="text" name="check-out" id="check-out" value="4 июля 2016">
+              <div class="date-container">
+                <span class="calendar"></span>
+                <input type="text" name="check-out" id="check-out" value="4 июля 2017">
+              </div>
             </div>
             <div class="persons">
               <label class="adults" for="adults">Взрослые:</label>
-              <span class="btn btn-minus"></span>
-              <input  type="text" name="adults" id="adults" value="2">
-              <span class="btn btn-plus" ></span>
+              <div class="persons-container">
+                <span class="btn btn-minus"></span>
+                <input  type="text" name="adults" id="adults" value="2">
+                <span class="btn btn-plus" ></span>
+              </div>
               <label class="children" for="children">Дети:</label>
-              <span class="btn btn-minus"></span>
-              <input  type="text" name="children" id="children" value="0">
-              <span class="btn btn-plus"></span>
+              <div class="persons-container">
+                <span class="btn btn-minus"></span>
+                <input  type="text" name="children" id="children" value="0">
+                <span class="btn btn-plus"></span>
+              </div>
             </div>
             <div class="btn-search">
               <button class="btn" type="submit">Найти</button>
