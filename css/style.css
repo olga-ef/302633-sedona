@@ -61,10 +61,11 @@ body {
   font-size: 0;
 }
 .menu-item {
-  width: 23%;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
   margin: 0;
+  margin-right: 3%;
   list-style: none;
   line-height: 26px;
   font-size: 14px;
@@ -72,7 +73,10 @@ body {
   text-align: left;
 }
 .menu-item:nth-child(4n-1) {
-  margin-left: 8%;
+  margin-left: 11%;
+}
+.menu-item:nth-child(4n) {
+  margin-right: 0;
 }
 .menu-item:nth-child(4n),
 .menu-item:nth-child(4n-1) {
