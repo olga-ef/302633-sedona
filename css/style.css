@@ -95,7 +95,6 @@ body {
    url("../img/mask.png"),
    url("../img/mountain.jpg");
   background-repeat:
-   no-repeat,
    no-repeat;
   background-position:
     50% 100%,
@@ -900,14 +899,11 @@ body {
   display: inline-block;
   vertical-align: middle;
   font-size: 0;
-}
-.sort-arrow a {
   border: 10px solid #cccccc;
   border-right-width: 5px;
   border-left-width: 5px;
   border-right-color: transparent;
   border-left-color: transparent;
-  display: inline-block;
 }
 .sort-arrow .arrow-up {
   border-top-width: 0;
